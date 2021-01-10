@@ -21,3 +21,6 @@ function Circle(radius) {
 }
 const c1 = new Circle(3);
 c1.draw();
+
+Circle.call({}, 1);
+Circle.apply({}, [1, 2, 3]);
