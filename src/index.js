@@ -55,3 +55,5 @@ if ('radius' in circle) {
     console.log('circle has radius ');
 
 }
+
+//// abstraction
