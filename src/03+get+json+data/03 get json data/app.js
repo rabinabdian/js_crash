@@ -3,7 +3,7 @@ document.getElementById('button1').addEventListener('click', loadUser)
 function loadUser() {
     const xhr = new XMLHttpRequest()
     xhr.open('GET', 'user.json', true)
-    xhr.onload = function() {
+    xhr.onload = function () {
         if (this.status === 200) {
             const user = JSON.parse(this.responseText)
             const output = `
