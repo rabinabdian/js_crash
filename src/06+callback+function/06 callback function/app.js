@@ -3,7 +3,7 @@ const todos = [{
     body: "This is first todo"
 }, {
     title: "Second todo",
-    body: "This is third todo"
+    body: "This is second todo"
 }]
 
 function createTodo(todo, callback) {
@@ -17,41 +17,13 @@ function getTodos() {
     setTimeout(() => {
         let output = ''
         todos.forEach(function(todo) {
-            output += `<li>${todo.title}</li>`
+            output += `<li>${todo.title}</li>
+            <li>${todo.body}</li>`
         })
         document.body.innerHTML = output
     }, 1000)
 }
 
-createTodo({
-    title: 'Third todo',
-    body: "This is third todo"
-}, getTodos)
-
-createTodo({
-    title: 'Third todo',
-    body: "This is third todo"
-}, getTodos)
-createTodo({
-    title: 'Third todo',
-    body: "This is third todo"
-}, getTodos)
-createTodo({
-    title: 'Third todo',
-    body: "This is third todo"
-}, getTodos)
-createTodo({
-    title: 'Third todo',
-    body: "This is third todo"
-}, getTodos)
-createTodo({
-    title: 'Third todo',
-    body: "This is third todo"
-}, getTodos)
-createTodo({
-    title: 'Third todo',
-    body: "This is third todo"
-}, getTodos)
 createTodo({
     title: 'Third todo',
     body: "This is third todo"
